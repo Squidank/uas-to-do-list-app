@@ -61,7 +61,7 @@ class startPage extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => signupPage()));
+                                    builder: (context) => loginPage()));
                           },
                           child: Container(
                             width: 130,
@@ -76,7 +76,7 @@ class startPage extends StatelessWidget {
                                 'LOGIN',
                                 style: GoogleFonts.roboto(
                                     fontSize: 24,
-                                    fontWeight: FontWeight.w600,
+                                    fontWeight: FontWeight.w500,
                                     color: Colors.white),
                               ),
                             ),
@@ -101,7 +101,7 @@ class startPage extends StatelessWidget {
                                 'SIGN UP',
                                 style: GoogleFonts.roboto(
                                     fontSize: 24,
-                                    fontWeight: FontWeight.w600,
+                                    fontWeight: FontWeight.w500,
                                     color: Colors.white),
                               ),
                             ),
