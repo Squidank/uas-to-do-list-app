@@ -57,50 +57,43 @@ class signupPage extends StatelessWidget {
               ),
             ],
           ),
-          Container(
-            margin: const EdgeInsets.only(
-              top: 270,
-              right: 53,
-              left: 53,
-            ),
-            child: Column(children: [
-              Container(
-                  height: 50,
-                  margin: EdgeInsets.only(bottom: 50),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30)),
-                  child: txtField('Enter Name', false)),
-              Container(
-                  margin: EdgeInsets.only(bottom: 50),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30)),
-                  child: txtField('Enter Email', false)),
-              Container(
-                  margin: EdgeInsets.only(bottom: 50),
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30)),
-                  child: txtField('Enter Password', true)),
-              Container(
-                  width: 130,
-                  height: 55,
-                  margin: EdgeInsets.only(bottom: 50),
-                  decoration: BoxDecoration(
-                      color: Color(0xff333C89),
-                      borderRadius: BorderRadius.circular(30)),
-                  child: Center(
-                    child: Text(
-                      'SIGN UP',
-                      style: GoogleFonts.roboto(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 20,
-                          color: Color(0xffADA7A7)),
-                    ),
-                  ))
-            ]),
-          ),
+          Column(children: [
+            Container(
+                margin: EdgeInsets.only(
+                    top: 270, right: 53, left: 53, bottom: 35),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30)),
+                child: txtField('Enter Name', false)),
+            Container(
+                margin: EdgeInsets.only(right: 53, left: 53, bottom: 35),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30)),
+                child: txtField('Enter Email', false)),
+            Container(
+                margin: EdgeInsets.only(right: 53, left: 53, bottom: 35),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(30)),
+                child: txtField('Enter Password', true)),
+            Container(
+                width: 130,
+                height: 55,
+                margin: EdgeInsets.only(bottom: 35),
+                decoration: BoxDecoration(
+                    color: Color(0xff333C89),
+                    borderRadius: BorderRadius.circular(30)),
+                child: Center(
+                  child: Text(
+                    'SIGN UP',
+                    style: GoogleFonts.roboto(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 20,
+                        color: Color(0xffADA7A7)),
+                  ),
+                ))
+          ]),
           Positioned(
             bottom: 110,
             left: 53,
@@ -114,19 +107,20 @@ class signupPage extends StatelessWidget {
                       fontSize: 18,
                       color: Color(0xffADA7A7)),
                 ),
-                GestureDetector(onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => loginPage()));},
-                  child: InkWell(
-                    child: Text(
-                      'LOGIN',
-                      style: GoogleFonts.roboto(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 18,
-                          color: Color(0xff5E5BFB)),
-                    ),
-                  )
-                )
+                GestureDetector(
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => loginPage()));
+                    },
+                    child: InkWell(
+                      child: Text(
+                        'LOGIN',
+                        style: GoogleFonts.roboto(
+                            fontWeight: FontWeight.w400,
+                            fontSize: 18,
+                            color: Color(0xff5E5BFB)),
+                      ),
+                    ))
               ],
             ),
           ),
