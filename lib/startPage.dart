@@ -94,7 +94,8 @@ class startPage extends StatelessWidget {
                             height: 55,
                             decoration: BoxDecoration(
                               color: Color(0xff333C89),
-                              borderRadius: BorderRadius.all(Radius.circular(30)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(30)),
                             ),
                             child: Center(
                               child: Text(

@@ -3,6 +3,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:uas/loginPage.dart';
+import 'package:uas/mainPage.dart';
+import 'package:uas/mainPage1.dart';
 
 class signupPage extends StatelessWidget {
   const signupPage({super.key});
@@ -77,22 +79,27 @@ class signupPage extends StatelessWidget {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(30)),
                 child: txtField('Enter Password', true)),
-            Container(
-                width: 130,
-                height: 55,
-                margin: EdgeInsets.only(bottom: 35),
-                decoration: BoxDecoration(
-                    color: Color(0xff333C89),
-                    borderRadius: BorderRadius.circular(30)),
-                child: Center(
-                  child: Text(
-                    'SIGN UP',
-                    style: GoogleFonts.roboto(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 20,
-                        color: Color(0xffADA7A7)),
-                  ),
-                ))
+            GestureDetector(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> mainPage()));
+              },
+              child: Container(
+                  width: 130,
+                  height: 55,
+                  margin: EdgeInsets.only(bottom: 35),
+                  decoration: BoxDecoration(
+                      color: Color(0xff333C89),
+                      borderRadius: BorderRadius.circular(30)),
+                  child: Center(
+                    child: Text(
+                      'SIGN UP',
+                      style: GoogleFonts.roboto(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 20,
+                          color: Color(0xffADA7A7)),
+                    ),
+                  )),
+            )
           ]),
           Positioned(
             bottom: 110,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uas/startPage.dart';
+import 'package:uas/splashScreen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'To Do List App',
       debugShowCheckedModeBanner: false,
-      home: const startPage(),
+      home: SplashScreen(),
     );
   }
 }
