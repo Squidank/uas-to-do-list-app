@@ -36,6 +36,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^4.0.3
+  flutter_native_splash: ^2.2.19
+  table_calendar: ^3.0.9
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +49,14 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  color_dark: "#042a49"
+  image: assets/splash.png
+  android: true
+  ios: true
+  web: true
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
